@@ -36,20 +36,13 @@ print(f"The computer chose {options[computer]}")
 
 if user == computer:
     print("looks like a draw")
-elif user == 0:
-    if computer == 1:
-        print("you lose")
-    else:
-        print("you win")
-elif user == 1:
-    if computer == 2:
-        print("you lose")
-    else:
-        print("you win")
-elif user == 2:
-    if computer == 0:
-        print("you lose")
-    else:
-        print("you win")
+elif user > computer:
+    if user == 2 and computer == 1:
+        print("You lose") 
+    else:{
+        print("You win")
+    }
+else:
+    print("you lose")
 
 
